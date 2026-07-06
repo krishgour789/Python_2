@@ -319,13 +319,13 @@ M O Q S
 U W Y [ ] '''
 
 
-n  = 5
-for i in range(n):
-    ch = "A"
-    for j in range(i+1):
-        print(ch,end=" ")
-        ch = chr(ord(ch)+1)
-    print()
+# n  = 5
+# for i in range(n):
+#     ch = "A"
+#     for j in range(i+1):
+#         print(ch,end=" ")
+#         ch = chr(ord(ch)+1)
+#     print()
 '''
 A 
 A B 
@@ -333,3 +333,39 @@ A B C
 A B C D 
 A B C D E 
 '''
+
+
+# n  = 5
+# for i in range(n):
+#     ch = "A"
+#     for j in range(i+1):
+#         print(ch,end=" ")
+#         ch = chr(ord(ch)+1)
+#     print()
+# n = 5
+# ch = "A"
+# for i in range(n):
+#     for j in range(n-i):
+#           print(ch,end=" ")
+#           ch=chr(ord(ch)+1)
+#     print()
+
+
+n = 10
+ch = 'A' # start from 'A'
+for i in range(1, n + 1):
+    print(' ' * (n - i), end='')
+    line = []
+    for _ in range(i):
+        line.append(chr(ord(ch)))
+        ch = chr(ord(ch)+1)
+    print(' '.join(line))
+n = 10
+ch = 'A' # start from 'A'
+for i in range(1, n + 1):
+    print(' ' * i, end='')
+    line = []
+    for _ in range(n-i):
+        line.append(chr(ord(ch)))
+        ch = chr(ord(ch)+1)
+    print(' '.join(line))

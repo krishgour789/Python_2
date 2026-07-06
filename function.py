@@ -112,7 +112,32 @@ function(("Banana","Kela","Angoor","ketchup"))'''
 
 # print(dikhao(1,2,3,4,5,"Krish","Gour"))  # Output: (1, 2, 3, 4, 5, 'Krish', 'Gour')
 
-def dilhoa(**kwargs): # it can take any number of keyword arguments
-    return kwargs
+# def dilhoa(**kwargs): # it can take any number of keyword arguments
+#     return kwargs
 
-print(dilhoa(name="Krish", lname="Gour"))  # Output: {'name': 'Krish', 'lname': 'Gour'}
+# print(dilhoa(name="Krish", lname="Gour"))  # Output: {'name': 'Krish', 'lname': 'Gour'}
+
+
+# def fun(a=int(input("enter a number")),b=int(input("enter a  number"))):
+#     return a+b
+# print(fun())
+
+
+# print(print("hello"))
+
+# def function():
+#     print("Hello World")
+# function()
+# res = function()
+# print(res)
+
+# def display():
+#     a = 10
+#     b = 20
+
+# display()
+# res=display()
+# print(res)
+
+a = eval
+
