@@ -139,5 +139,103 @@ function(("Banana","Kela","Angoor","ketchup"))'''
 # res=display()
 # print(res)
 
-a = eval
 
+
+
+# Positinal Arguments
+# def function(a,b):
+#     return a+b
+# print(function(3,4))
+
+# Default Arguments
+# def sum(b,a=20):
+#     return a+b
+# print(sum(10,90))
+
+# def sum(a=20,b):  # It will give an error bcz parameter without a default follows parameter with a default
+#     return a+b
+# print(sum(10,90))
+
+# Keyword Argumrnts
+# def sum(a,b):
+#     return a*b
+# print(sum(b=10,a=90))
+
+# Variable length Arguments
+# def sum(*n):
+#     total = 0
+#     for i in n:
+#         total+=i
+#     print("The total sum is :",total)
+# sum(10,20,30,50)
+
+
+# key word variable length arguments
+# def display(**kwargs):
+#     for i,v in kwargs.items():
+#         print(f"{i}:{v}")
+# display(name="KrishGour",age=23)
+
+# def sum():
+#     global a
+#     a = 10
+#     print(a)
+# def m2():
+#     print(a)
+# sum()
+# m2()
+
+# n = int(input())
+# s = 0
+# for i in range(1,n+1):
+#     s+=i*i
+# print(s)
+
+# def student(name,age=19,*n,**kwargs):
+#     print(name)
+#     print(age)
+#     print(n)
+#     for i,v in kwargs.items():
+#         print(f"{i}:{v}")
+    
+# student("KrishGour",20,("Python","Djnago","MySql"),Class10="MNA")
+
+
+def stu(name,age=19,*n,school,city="Bhopal",**x):
+    print(name)    #Positional Arguments
+    print(age)    #Deafult Positional Arguments
+    print(n)   #Variable length Positional Arguments (*n)
+    print(school)     #key-word  Arguments
+    print(city)    #default keyword argument
+    print(x)      #Variable length key-word Arguments (*n)
+
+stu("KrishGour",20,10,30,42,school="MNA",city="Sehore",x=10,y=10)
+
+
+
+# examples of function 
+# def add(a,b):
+#     return a+b
+# print(add(5,3))
+
+# def xyz(*n):
+#     print(n)
+# xyz()
+
+# def xyz(**n):
+#     print(n)
+# xyz()
+
+# def xyz(b,a=10):
+#     print(a,b)
+# xyz(20)
+
+# print(list())
+
+
+
+# function Variable are  mainly three types
+
+# global 
+# local 
+# non local = used in nested fucntion
