@@ -139,9 +139,82 @@ from functools import reduce
 # print(res)
 
 
-l = eval(input("Enter the list: "))
-print(l)
-# x = l
-# print(x)
-# print(x)
-# print(type(x))
+# l = eval(input("Enter the list: "))
+# print(l)
+# # x = l
+# # print(x)
+# # print(x)
+# # print(type(x))
+
+# a = [1,2,3,2,3,"p","l","m"]
+# print(a.index(2))
+# print(a.index("p",3,7))
+# print(a.index("l",3,7))
+# print(a.index("m",3))
+
+# def changecase(func):
+#     def inner(*n,**m):
+#         print("welcome")
+#         return func(*n,**m).upper()
+#     return inner
+# @changecase
+# def greet(name):
+#     return f"Hello {name}"  
+# print(greet("Krish Gour"))
+# print(greet("Princy"))
+
+
+# def changecase(n):
+#     def changecase(func):
+#         def inner(name):
+#             if n==1:
+#                 return func(name).upper()
+#             else:
+#                 return func(name).lower()
+#         return inner
+#     return changecase
+# @changecase(1)
+# def greet(name):
+#     return f"My name is {name}"
+# print(greet("krish gour"))
+
+
+
+# def myfunction():
+#   return "Have a great day!"
+
+# print(myfunction.__name__)
+# print(myfunction())
+
+
+# def number(n):
+#     return lambda x:x*n
+# double = number(3)
+# double1 = number(6)
+# print(double(4))
+# print(double1(4))
+
+
+def outer_fun(main_func):
+    def inner(x,y):
+        print("hello")
+        # return x*y
+        main_func(x,y)
+        print("After execution")
+    return inner
+# @outer_fun
+def main_func(x,y):
+    print(x+y)
+res = outer_fun(main_func)    # We can also use decorator @outer_fun instead of this line
+res(10,20)                    
+# main_func(10,20)    
+
+# @outer_fun
+# def xyz(x,y):
+#     print(x//y)
+# xyz(20,2)
+
+
+# if True:
+#     a = 10
+# print(a)
