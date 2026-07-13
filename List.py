@@ -79,14 +79,15 @@ a = [23,3,4,23,2,3,4]
 # print(next(a))
 # print(next(a))
 
-a = "class"
-def fun():
-    a = 'Krish Gour'
-    def inner():
-        a = "Princy"
-        print(a)
-    inner()
-    print(a)
-fun()
-print(a)
+# a = "class"
+# def fun():
+#     a = 'Krish Gour'
+#     def inner():
+#         a = "Princy"
+#         print(a)
+#     inner()
+#     print(a)
+# fun()
+# print(a)
+
 
