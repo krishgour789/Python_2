@@ -75,12 +75,53 @@
 #         print("Please choose right way")
 # a = upper(input("Enter Your Name :"),int(input("Enter Your Numer :\n 1. For upper\n 2. For Lower\n 3.For Capatalize\n 4. For title\n")))
 
-class A:
-    def __init__(self):
-        self.a=10
-        self.b=20
-    def display(self):
-        print(self.a)
-        print(self.b)
-obj = A()
-obj.display()
+# class A:
+#     def __init__(self):
+#         self.a=10
+#         self.b=20
+#     def display(self):
+#         print(self.a)
+#         print(self.b)
+# obj = A()
+# obj.display()
+
+
+# Class Methods
+# class A:
+#     x = 2000
+#     @classmethod
+#     def pull(cls):
+#         return cls.x
+# obj = A()
+# print(A.pull())   # class methods access by using class name
+# print(obj.pull()) # class methods acccess by using obj 
+
+# Static Methods
+# class A:
+#     @staticmethod
+#     def pull(x,y):
+#         return x+y
+# ob = A()
+# print(ob.pull(1,2))
+
+#  Method Resolution Order (MRO). 
+class A: 
+    def m1(self): 
+        print("Method m1() is called from class A") 
+ 
+class B: 
+    def m1(self): 
+        print("Method m2() is called from class B") 
+ 
+class C(B,A): 
+    def m3(self): 
+        print("Method m3() is called") 
+ 
+obj = C() 
+obj.m1() 
+obj.m3() 
+print(C.mro())
+print(C.mro()[0])      # C
+print(C.mro()[1])      # A
+print(C.mro()[2])      # B
+
